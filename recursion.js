@@ -1,4 +1,3 @@
-
 // ****** Very basic example of a Recursion: ****** //
 
 // function basicRecursion(max, current) {
@@ -12,21 +11,41 @@
 // ****** END OF basic example of Recursion ****** //
 
 
+
+
 // ****** FIBONNACI EXAMPLE ****** //
-function fibonacci(n) {
-    if(n <=2 ) {
-        return 1;
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
-    }
+// function fibonacci(n) {
+//     if(n <=2 ) {
+//         return 1;
+//     } else {
+//         return fibonacci(n - 1) + fibonacci(n - 2);
+//     }
+// }
+
+// for (var i = 1; i <= 20; i++) {
+//     console.log(`${i}. ${fibonacci(i)}`);
+// }
+
+// ****** EXERCISE 1 ****** //
+// WRITE A RECURSIVE FUNCTION DOING FACTORIALS //
+
+// Solution using loop:
+// function factorial(n) {
+//     let total = 1;
+//       for(let i = 1; i <= n; i++) {
+//         total *= i
+//       }
+//       return total
+//   }
+
+// Recursive solution:
+function factorial(n) {
+  if (n < 2) {
+    return 1;
+  }
+  return n * factorial(n - 1);
 }
-
-for (var i = 1; i <= 20; i++) {
-    console.log(`${i}. ${fibonacci(i)}`);
-}
-
-
-
+// ****** END OF Exercise 1 ****** //
 
 
 // ****** RECURSION NOTES ****** //
