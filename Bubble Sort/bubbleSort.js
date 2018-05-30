@@ -115,3 +115,23 @@
 //     // Return the sorted array!
 //     return array;
 // }
+
+
+const bubbleSort = (arr) => {
+    // Create a DO WHILE loop
+    do{
+      var swapped = false; // Create a variable swapped and set to false;
+      arr.forEach((num, i) => { // Loop over array and check to see if the current num is greater than the number to the right of it.
+        if(num > arr[i + 1]) {
+            // If current number is greater, we create a temp variable to store the value of current num.
+          let temp = num;
+          arr[i] = arr[i + 1]; // Set the current num to the value to the right
+          arr[i + 1] = temp; // Set the value of the number on the right to number stored in temp var
+          swapped = true; // set swapped to true and go to next iteration.
+        }
+      })
+    }while(swapped) // The do while will run as long as swapped in set to true.  Itll keep going until it doesnt go in the if statement anymore and will return the sorted array.
+    return arr
+  }
+  
+  bubbleSort([2, 1, 5, 3, 8, 10, 4, 6, 2342, 245234, 1234, 7])
