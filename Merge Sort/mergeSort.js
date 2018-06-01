@@ -27,6 +27,9 @@
 
 2. When you use somthing like array.sort(), 90% of the time, under the hood, merge sort is being utilized.
 
+3.  Reason why merge sort is commonly used is because its consistent.
+
+4.  Merge sort uses Recursion.
 
 */
 
