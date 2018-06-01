@@ -37,22 +37,20 @@ const insertionSort = (nums) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // ****** Insertion Sort NOTES ****** //
 /*
 
 1.  Really great for arrays where you are pretty sure most of the items are sorted.
 
 2. It falls apart when the array is not sorted at all.
+
+3. First loop starts at index of one as the first number is always sorted.
+
+4. Second loop will be looping through the numbers that are already sorted.
+
+Ex: if i = 5, j will start over from 0 until it reaches i, and if the number at index of j is less that the current number i, it will swap it there.
+
+5.  Insertion is better than Bubble because once its sorted, it doesnt need to loop through the sorted numbers again.
 
 */
 
