@@ -32,19 +32,9 @@ const stitch = (left, right) => {
     while(right.length) {
         results.push(right.shift());
     }
-    
+
     return results;
 }
-
-
-
-
-
-
-
-
-
-
 
 // ****** END OF Exercise 1 ****** //
 
