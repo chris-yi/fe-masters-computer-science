@@ -38,42 +38,6 @@ const stitch = (left, right) => {
 
 // ****** END OF Exercise 1 ****** //
 
-const mergeSort = arr => {
-  if (arr.length < 2) {
-    return arr;
-  }
-
-  const length = arr.length;
-  const mid = Math.floor(length / 2);
-  const left = arr.slice(0, mid);
-  const right = arr.slice(mid, length);
-
-  const sortedLeft = mergeSort(left);
-  const sortedRight = mergeSort(right);
-
-  return stitch(sortedLeft, sortedRight);
-};
-
-const stitch = (left, right) => {
-  const result = [];
-
-  while (left.length && right.length) {
-    if (left[0] <= right[0]) {
-      result.push(left.shift());
-    } else {
-      result.push(right.shift());
-    }
-  }
-
-  while (left.length) {
-    result.push(left.shift());
-  }
-  while (right.length) {
-    result.push(right.shift());
-  }
-  return result;
-};
-
 // ****** Merge Sort NOTES ****** //
 /*
 
