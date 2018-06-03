@@ -1,16 +1,29 @@
-// ****** Very basic example of a Merge Sort: ****** //
-
-
-
-
-// ****** END OF basic example of Merge Sort ****** //
-
-
-
-
-
-
 // ****** EXERCISE 1 ****** //
+
+const mergeSort = (nums) => {
+    if(nums.length < 2) {
+        return nums;
+    }
+
+    const length = nums.length;
+    const middle = Math.floor(length / 2);
+    const left = nums.slice(0, middle);
+    const right = nums.slice(middle, length);
+
+    const sortedLeft = mergeSort(left);
+    const sortedRight = mergeSort(right);
+
+    return stitch(sortedLeft, sortedRight);
+};
+
+
+
+
+
+
+
+
+
 
 
 
