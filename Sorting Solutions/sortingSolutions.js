@@ -74,3 +74,11 @@ const stitch = (left, right) => {
 };
 
 // ************ END OF Merge Sort ************ //
+
+// ************ Merge Sort ************ //
+
+const quickSort = (arr) => {
+
+}
+  
+  // ************ END OF Merge Sort ************ //
