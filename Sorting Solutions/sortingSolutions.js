@@ -77,8 +77,27 @@ const stitch = (left, right) => {
 
 // ************ Merge Sort ************ //
 
-const quickSort = (arr) => {
+const quickSort = arr => {
+  if (arr.length <= 1) {
+    return arr;
+  }
 
-}
-  
-  // ************ END OF Merge Sort ************ //
+  const pivot = arr[arr.length - 1];
+  const left = [];
+  const right = [];
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] < pivot) {
+      left.push(arr[i]);
+    } else {
+      right.push(arr[i]);
+    }
+  }
+
+  const sortedLeft = quickSort(left);
+  const sortedRight = quickSort(right);
+
+  return [...sortedLeft, pivot, ...sortedRight];
+};
+
+// ************ END OF Merge Sort ************ //
