@@ -75,7 +75,7 @@ const stitch = (left, right) => {
 
 // ************ END OF Merge Sort ************ //
 
-// ************ Merge Sort ************ //
+// ************ Quick Sort ************ //
 
 const quickSort = arr => {
   if (arr.length <= 1) {
@@ -100,4 +100,4 @@ const quickSort = arr => {
   return [...sortedLeft, pivot, ...sortedRight];
 };
 
-// ************ END OF Merge Sort ************ //
+// ************ END OF Quick Sort ************ //
