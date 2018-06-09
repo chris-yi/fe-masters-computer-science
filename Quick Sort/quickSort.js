@@ -9,7 +9,8 @@ const quickSort = nums => {
   const left = [];
   const right = [];
 
-  for (let i = 0; i < nums.length - 1; i++) { // the nums.length - 1 is because you dont want to loop to the last number, which is the pivot
+  for (let i = 0; i < nums.length - 1; i++) {
+    // the nums.length - 1 is because you dont want to loop to the last number, which is the pivot
     if (num[i] < pivot) {
       left.push(nums[i]);
     } else {
